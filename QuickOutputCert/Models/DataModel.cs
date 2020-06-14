@@ -3,10 +3,10 @@ namespace QuickOutputCert.Models
 {
     public class DataModel : BindableBase
     {
-        public int No { get; set; }
+        public string Index { get; set; }
         public string ProdName { get; set; }
         public string Hscode { get; set; }
-        public int Evaluation { get; set; }
+        public string Evaluation { get; set; }
         public string Place { get; set; }
         public string Manufacturer { get; set; }
         public string ManuDate { get; set; }

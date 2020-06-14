@@ -35,9 +35,10 @@
                 <TextBlock Text="匯入報告"/>
             </Button>
             <Button Grid.Column="1" Style="{StaticResource MaterialDesignRaisedDarkButton}"
-                    materialDesign:ButtonAssist.CornerRadius="5"  Margin="15,0">
+                    materialDesign:ButtonAssist.CornerRadius="5"  Margin="15,0" Command="{Binding OutputCommand}">
                 <TextBlock Text="匯出報告"/>
             </Button>
+            <TextBlock Grid.Column="2" Text="{Binding FileName}" VerticalAlignment="Center"/>
         </Grid>
     </Grid>
 </Window>
