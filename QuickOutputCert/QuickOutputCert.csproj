@@ -172,6 +172,7 @@
     <Content Include="Resources\核對單範本.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\進口舊機電設備裝運前現場檢驗記錄新版10台.docx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

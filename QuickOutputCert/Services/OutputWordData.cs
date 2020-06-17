@@ -48,7 +48,7 @@ namespace QuickOutputCert.Services
                     new FieldContent("DeviceModel", e.DeviceModel),
                     new FieldContent("Count", e.Count),
                     new FieldContent("Place", e.Place),
-                    new FieldContent("UseYear", e.ManuDate),
+                    new FieldContent("ProdDate", e.ProdDate),
                     new FieldContent("Evaluation", e.Evaluation),
                     new FieldContent("Content1", $"({e.Manufacturer})"),
                     new FieldContent("Content2", $"({e.DeviceNo})")

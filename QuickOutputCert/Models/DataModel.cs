@@ -11,7 +11,7 @@ namespace QuickOutputCert.Models
         public string Evaluation { get; set; }
         public string Place { get; set; }
         public string Manufacturer { get; set; }
-        public string ManuDate { get; set; }
+        public string ProdDate { get; set; }
         public string DeviceNo { get; set; }
         public string DeviceModel { get; set; }
         public string Count { get; set; }
