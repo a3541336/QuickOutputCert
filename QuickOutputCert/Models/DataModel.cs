@@ -1,4 +1,6 @@
 ﻿using Prism.Mvvm;
+using System;
+
 namespace QuickOutputCert.Models
 {
     public class DataModel : BindableBase
@@ -32,5 +34,10 @@ namespace QuickOutputCert.Models
         public string DeviceCheck11 { get; set; }
         public string DeviceCheck12 { get; set; }
         public string Remark { get; set; }
+
+        internal object CompareTo(DataModel y)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
