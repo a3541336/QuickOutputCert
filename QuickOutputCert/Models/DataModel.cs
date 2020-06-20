@@ -8,17 +8,17 @@ namespace QuickOutputCert.Models
         public string Index { get; set; }
         public string ProdName { get; set; }
         public string Hscode { get; set; }
-        public string Evaluation { get; set; }
-        public string Place { get; set; }
-        public string Manufacturer { get; set; }
-        public string ProdDate { get; set; }
-        public string DeviceNo { get; set; }
         public string DeviceModel { get; set; }
+        public string DeviceNo { get; set; }
         public string Count { get; set; }
-        public string UseYear { get; set; }
-        public string HowUse { get; set; }
-        public string SealNo { get; set; }
+        public string Place { get; set; }
+        public string ProdDate { get; set; }
+        public string Manufacturer { get; set; }
         public string DeviceValue { get; set; }
+        public string HowUse { get; set; }
+        public string UseYear { get; set; }
+        public string SealNo { get; set; }
+        public string Evaluation { get; set; }
         public string Check1 { get; set; }
         public string Check2 { get; set; }
         public string DeviceCheck1 { get; set; }

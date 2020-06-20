@@ -5,6 +5,7 @@ using QuickOutputCert.Models;
 using QuickOutputCert.Services;
 using System.Collections.Generic;
 using System.IO;
+using System.Windows;
 
 namespace QuickOutputCert.ViewModels
 {
@@ -24,10 +25,11 @@ namespace QuickOutputCert.ViewModels
         {
             InputCommand = new DelegateCommand(() =>
             {
-                OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-                openFileDialog.FilterIndex = 2;
-                openFileDialog.RestoreDirectory = true;
+                OpenFileDialog openFileDialog = new OpenFileDialog
+                {
+                    Filter = "Excel File(*.xlsx)|*.xlsx",
+                    RestoreDirectory = true
+                };
                 if (openFileDialog.ShowDialog().Value)
                 {
                     FileName = Path.GetFileNameWithoutExtension(openFileDialog.FileName);
@@ -36,7 +38,10 @@ namespace QuickOutputCert.ViewModels
             });
             OutputCommand = new DelegateCommand(() =>
             {
-                FileName.OutputReportDetail(ObcDataModel);
+                if (ObcDataModel.Count < 1)
+                    MessageBox.Show("資料不能為空");
+                else
+                    FileName.OutputReportDetail(ObcDataModel);
             });
         }
     }
